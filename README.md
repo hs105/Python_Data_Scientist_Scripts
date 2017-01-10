@@ -7,14 +7,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-## Root Mean Square Error (so-called RMSE)
-Say predictions and targets are two vectors, you can calculate the RMSE by:
-```
-np.sqrt(np.mean((predictions-targets)**2))
-```
-
-## Python
-
 ### Array
 
 * To take mean over a dimension (basically this dimension will be reduced)
@@ -47,6 +39,11 @@ The output is
 [(0, -1), (2, 2.1), (1, 3.3)]
 ```
 This trick will be frequently used if you want do some ranking according to some measure. 
+
+* Root Mean Square Error (so-called RMSE). Say predictions and targets are two vectors (1D array), you can calculate the RMSE by:
+```
+np.sqrt(np.mean((predictions-targets)**2))
+```
 
 ###Plotting
 
