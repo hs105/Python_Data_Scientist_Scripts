@@ -78,7 +78,7 @@ def play_one_game(agent):
         n += 1
     return total_rewards, n
 ```
-"screen_image" is a 2D array image. 
+"screen_image" is a 2D array image. What shows here is a plotting in grey mode. 
 
 
 
