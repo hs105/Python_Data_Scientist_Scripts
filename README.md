@@ -41,7 +41,6 @@ The output is
 a = [-1, 3.3, 2.1]
 a_sorted = sorted(a, enumrate(a), key = lambda x: x[1])
 print(a_sorted)
-[(0, -1), (2, 2.1), (1, 3.3)]
 ```
 The output is
 ```
