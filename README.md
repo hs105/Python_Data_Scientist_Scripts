@@ -15,7 +15,7 @@ np.sqrt(np.mean((predictions-targets)**2))
 
 ## Python
 
-## Array
+### Array
 
 * To take mean over a dimension (basically this dimension will be reduced)
 ```
@@ -60,7 +60,6 @@ figure = plt.imshow(grey_image, cmap=plt.cm.Greys_r)
 import matplotlib.pyplot as plt
 
 def play_one_game(agent):
-    total_rewards = 0.0
     agent.game.new_episode()
     n = 0
     while not agent.game.is_finished() and n < 200:
@@ -72,9 +71,6 @@ def play_one_game(agent):
             figure.set_data(screen_image)
             plt.pause(0.01)
         a, r, _ = agent.act()
-
-        total_rewards += r
-
         n += 1
     return total_rewards, n
 ```
