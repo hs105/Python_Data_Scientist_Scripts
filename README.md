@@ -1,6 +1,7 @@
 # Python_Data_Scientist_Scripts
 
 ## Common Imports
+This documdent uses the following imports:
 ```
 import numpy as np
 import matplotlib.pyplot as plt
