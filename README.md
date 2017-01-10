@@ -55,3 +55,30 @@ This trick will be frequently used if you want do some ranking according to some
 figure = plt.imshow(grey_image, cmap=plt.cm.Greys_r)
 ```
 
+* Real time plotting: plotting a sequence of images so it looks a video. Just generate the figure in the beginning and set the figure's data to the image. In a game playing setting, this looks like
+```
+import matplotlib.pyplot as plt
+
+def play_one_game(agent):
+    total_rewards = 0.0
+    agent.game.new_episode()
+    n = 0
+    while not agent.game.is_finished() and n < 200:
+        screen_image = agent.game.state()
+        agent.observe_state(screen_image)
+        if n == 0:
+            figure = plt.imshow(screen_image, cmap=plt.cm.Greys_r)
+        else:
+            figure.set_data(screen_image)
+            plt.pause(0.01)
+        a, r, _ = agent.act()
+
+        total_rewards += r
+
+        n += 1
+    return total_rewards, n
+```
+"screen_image" is a 2D array image. 
+
+
+
