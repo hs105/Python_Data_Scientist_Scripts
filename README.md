@@ -73,5 +73,10 @@ def play_one_game(agent):
 ```
 "screen_image" is a 2D array image. What shows here is a plotting in grey mode. 
 
-
+### GPU
+To find your display card on ubuntu, 
+```
+lspci | grep VGA
+```
+Hope you see Nvidia cards. Right now OpenCV (version 3) only supports NVIDIA GPUs. 
 
