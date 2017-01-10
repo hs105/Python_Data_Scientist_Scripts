@@ -17,5 +17,5 @@ np.sqrt(np.mean((predictions-targets)**2))
 ###Plotting
 * In order to display a grey image, we have to explicitly say so: 
 ```
-figure = plt.imshow(screen, cmap=plt.cm.Greys_r)
+figure = plt.imshow(grey_image, cmap=plt.cm.Greys_r)
 ```
