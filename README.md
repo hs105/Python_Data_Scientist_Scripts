@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-## Root Mean Square Error(RMSE)
+## Root Mean Square Error (so-called RMSE)
 Say predictions and targets are two vectors, you can calculate the RMSE by:
 ```
 np.sqrt(np.mean((predictions-targets)**2))
