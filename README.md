@@ -78,5 +78,5 @@ To find your display card on ubuntu,
 ```
 lspci | grep VGA
 ```
-Hope you see Nvidia cards. Right now OpenCV (version 3) only supports NVIDIA GPUs. 
+Hope you see Nvidia cards. Right now [OpenCV (version 3) only supports NVIDIA GPUs](http://docs.opencv.org/2.4/modules/gpu/doc/introduction.html). 
 
