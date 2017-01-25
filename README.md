@@ -7,6 +7,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
+## Machine Learning Algorithms
+
+### Expectation Maximization
+
+### Collaborative Filtering
+
+### Kalman Filter
+
+### Particle Filter
+
+
 ### Array
 
 * To take mean over a dimension (basically this dimension will be reduced)
