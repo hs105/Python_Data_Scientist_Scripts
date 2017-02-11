@@ -17,6 +17,15 @@ import matplotlib.pyplot as plt
 
 ### Particle Filter
 
+### Random Forests
+RF is so popular. Almost every candidate I interviewed knows this algorithm. 
+
+### Dimension Reduction
+t-SNE by Hinton. High dimensional data visualization. 
+
+### Bayesian Procedure. 
+The stopping condition is that the posterior distribution doesn't change. 
+
 
 ### Array
 
